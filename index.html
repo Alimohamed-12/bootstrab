@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+   <link rel="stylesheet" href="css/all.css">
+   <link rel="stylesheet" href="css/style.css">
+ 
+
+ 
+</head>
+
+<body>
+
+ 
+
+<!-- navbar -->
+
+
+<nav class="navbar navbar-expand-lg navbar- bg- ">
+   <div class="container-fluid">
+       <img class="image rounded-circle" src="img/main_img.png" width="50"
+           height="50" alt="">
+      <!-- <a class="navbar-brand" href="#">Navbar</a>  -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+   
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item px-3 ">
+                   <a class="nav-link active   ms-3 fs-3" aria-current="page" href="#"><img src="img/logo.png" style="width: 50px;height: 50px;"></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link text-warning  pt-4 fs-5 ms-3" href="#">Home</a>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle collors text-success mt-3 fs-5 ms-3 ps-2 border border-warning rounded" href="#"
+                       id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Menu
+                   </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <li><a class="dropdown-item text-success" href="#">burger</a></li>
+                       <li><a class="dropdown-item text-success" href="#">orange juice</a></li>
+                       <li>
+                           <hr class="dropdown-divider text-info">
+                       </li>
+                       <li><a class="dropdown-item text-success" href="#">chicken</a></li>
+                       <li><a class="dropdown-item text-success" href="#">cakes</a></li>
+                       <li><a class="dropdown-item text-success" href="#">rice and fish</a></li>
+                   </ul>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link text-success pt-4 fs-5 ms-3" href="#" tabindex="-1"
+                       aria-disabled="true">About</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link  disabled text-success pt-4 fs-5 ms-3" href="#" tabindex="-1"
+                       aria-disabled="true">Contact us</a>
+               </li>
+           </ul>
+           <form class="d-flex">
+               <input class="form-control me-2 border border-success"  type="search" placeholder="Search" aria-label="Search ">
+               <button type="button" class="btn btn-success text-white me-2">Search</button>
+               <!-- <button type="button" class="btn btn-success text-white" data-bs-toggle="modal"
+                   data-bs-target="#exampleModal">
+                   login
+               </button> -->
+               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">login</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+
+                     <div class="modal-header bg-warning">
+                         <h1 class="modal-title  fs-5" id="exampleModalLabel">login</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              
+                     </div>
+
+
+                    <div class="modal-body">
+
+                        <form>
+                             <div class="mb-3">
+                                 <label for="recipient-name" class="text-warning col-form-label">Email:</label>
+                                  <input type="text" class="form-control " placeholder="Enter email" id="recipient-name">
+                             </div>
+                             <div class="mb-3">
+                              <label for="message-text" class="text-warning col-form-label">Password:</label>
+                                <input type="password" placeholder="password" class="form-control" id="recipient-name">
+                             </div>
+
+                             <div class="mb-3">
+                              <div class="form-check form-switch">
+                                 <input class="form-check-input bg-warning" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                 <label class="form-check-label" for="flexSwitchCheckChecked">Remeberd Me</label>
+                               </div>
+                             </div>
+                      </form>
+
+                   
+                     </div>
+
+                  <div class="modal-footer d-flex justify-content-between">
+                       <button type="button" class="btn  btn-warning" data-bs-dismiss="modal">login</button>
+                       <button type="button" class="btn btn-warning" data-bs-dismiss="modal">close</button>
+                 </div>
+   
+               </div>
+             </div>
+         </div>
+           </form>
+       </div>
+   </div>
+</nav>
+
+<!-- Carousel -->
+
+<div id="carouselExampleIndicators" class="carousel slide">
+
+   <div class="carousel-indicators">
+     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   </div>
+
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="img/buger.jpg" class="d-block w-100" style="height: 85vh;" alt="...">
+       <div class="carousel-caption  fs-3">
+         <h3>Los Angeles</h3>
+         <p>We had such a great time in LA!</p>
+       </div>
+     </div>
+
+     <div class="carousel-item">
+       <img src="img/pasta.jpg" class="d-block w-100" style="height: 85vh;" alt="...">
+       <div class="carousel-caption fs-3">
+         <h3>Los Angeles</h3>
+         <p>We had such a great time in LA!</p>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="img/cake.jpg" class="d-block w-100" style="height: 85vh;" alt="...">
+       <div class="carousel-caption  text-white fs-3">
+         <h3>Los Angeles</h3>
+         <p>We had such a great time in LA!</p>
+       </div>
+     </div>
+   </div>
+  
+
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+ </div>
+
+
+<!-- bage--2-- -->
+ 
+  <div class="container-fluid jumbotron bg-secondary ali text-light">
+     <h1 class="text-warning">welcome</h1>
+    <p class="text-light">do you want to buy any order from us ?</p>
+    <button type="button" class="btn btn-warning text-light mb-4 ">Learn More</button>
+  </div>
+
+<hr>
+
+  <div class="container-fluid   text-warning bg-secondary text-center">
+     <h2 class="p-4 text-capitalize fs-2">famous of restaurant in egypt</h2>
+  </div>
+
+
+  <div class=" bach py-2 ">
+      <div id="accordion">
+                  
+         
+      <div class="card my-3">
+         <div class="card-header">
+           <a class="btn  text-info fs-4" data-bs-toggle="collapse" href="#collapseOne">
+             Mohamedy Restaurant
+           </a>
+         </div>
+         <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+           <div class="card-body text-secondary">
+         we are the best restaurant in mansora and has discount 30%
+           </div>
+         </div >
+       </div>
+      
+        <div class="card my-3">
+          <div class="card-header">
+           <a class="collapsed text-info fs-4 btn" data-bs-toggle="collapse" href="#collapseTwo">
+            EL Baron
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+           <div class="card-body text-secondary">
+            we are the best restaurant in mansora and has discount 30%
+           </div>
+          </div>
+        </div>
+      
+           <div class="card my-3">
+             <div class="card-header">
+                 <a class="collapsed text-info fs-4 btn" data-bs-toggle="collapse" href="#collapseThree">
+                     Kintaki
+                  </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                 <div class="card-body text-secondary">
+                     we are the best restaurant in mansora and has discount 30%
+                </div>
+             </div>
+           </div>
+       </div>
+ </div>
+
+ <div class="text-center  text-capitalize bg-secondary text-warning p-3" >
+   <h2 class="">translate from arabic to english</h2>
+ </div>
+
+<div style="height: 18rem;" class="container-fluid ps-5 ali">
+    <h3 class="fs-4 pt-4 text-dark text-capitalize">write and translate <a class="text-decoration-none text-info" href="#">press here</a></h3>
+    <button type="button" style="display: block;" class="btn mt-4 mx-4  btn-info bg-light text-info" data-bs-toggle="modal" data-bs-target="#myModal">
+     copey   </button>
+     <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+      Popover on right
+    </button> -->
+
+     <textarea class="form-control mt-4 text-info p-3" id="message-text"> translate</textarea>
+    <!-- The Modal -->
+   <div class="modal " id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-secondary">
+    
+          <!-- Modal Header -->
+           <div class="modal-header ">
+             <h4 class="modal-title text-light">moalihassan036</h4>
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+            <div class="modal-body text-light d-flex justify-content-end">
+                 تم نسخ
+            </div>
+    
+          <!-- Modal footer -->
+            <div class="modal-footer">
+               <button type="button" class="btn btn-info bg-light text-info ps-4 pe-4 " data-bs-dismiss="modal">ok</button>
+           </div>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+<hr>
+<div class="text-center  text-capitalize bg-secondary text-warning p-3" >
+   <h2 class="">translate from arabic to german</h2>
+ </div>
+
+
+
+<div style="height: 18rem;" class="container-fluid   ps-5 ali">
+   <h3 class="fs-4 pt-4 text-dark text-capitalize">write and translate <a class="text-decoration-none text-info" href="#">press here</a></h3>
+   <button type="button" style="display: block;" class="btn mt-4 mx-4  btn-info bg-light text-info" data-bs-toggle="modal" data-bs-target="#myModal">
+    copey   </button>
+    <textarea class="form-control mt-4 text-info p-3" id="message-text"> translate</textarea>
+   <!-- The Modal -->
+  <div class="modal" id="myModal">
+     <div class="modal-dialog">
+       <div class="modal-content">
+   
+         <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">moalihassan036@gamil.com</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+   
+         <!-- Modal body -->
+           <div class="modal-body d-flex justify-content-end">
+                تم نسخ
+           </div>
+   
+         <!-- Modal footer -->
+           <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">ok</button>
+          </div>
+       </div>
+     </div>
+ </div>
+
+</div>
+<hr>
+
+<div class="text-center  text-capitalize bg-secondary text-warning  p-3" >
+   <h2 class="">translate from arabic to french</h2>
+ </div>
+
+<div style="height: 18rem;" class="container-fluid ps-5 ali">
+   <h3 class="fs-4 pt-4 text-dark text-capitalize">write and translate <a class="text-decoration-none text-info" href="#">press here</a></h3>
+   <button type="button" style="display: block;" class="btn mt-4 mx-4  btn-info bg-light text-info" data-bs-toggle="modal" data-bs-target="#myModal">
+    copey  </button>
+
+    <!-- <textarea rows="4"  class="mt-4 text-primary border border-info  p-3" cols="150"> translate </textarea> -->
+    <textarea class="form-control mt-4 text-info p-3" id="message-text"> translate</textarea>
+  
+   <!-- The Modal -->
+  <div class="modal" id="myModal">
+     <div class="modal-dialog">
+       <div class="modal-content">
+   
+         <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">moalihassan036</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+   
+         <!-- Modal body -->
+           <div class="modal-body d-flex justify-content-end">
+                تم نسخ
+           </div>
+   
+         <!-- Modal footer -->
+           <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">ok</button>
+          </div>
+       </div>
+     </div>
+ </div>
+
+</div>
+
+
+<div class="container-fluid ali fixed  "  style="width:100%; height: 22rem;" >
+
+</div>
+
+<div class="container-fluid text-center py-3 fs-3 bg-secondary text-warning text-capitalize ">popular restaurant in masr</div>
+
+
+
+   <!-- cards -->
+   <div class="container  mt-3">
+      <div class="row ">
+
+         <div class="col-12 col-sm-12 col-m-6 col-lg-4 my-3">
+            <div class="card alll " style="width: 20rem;">
+               <img src="img/res8.avif" class="card-img-top " style="height: 300px;" alt="...">
+               <div class="card-body">
+             <div class="cont d-flex justify-content-between">
+               <h5 class="card-title d-inline text-dark text-capitalize">latino restaurant</h5>
+               <a href="#" class="btn btn-secondary text-warning">know more</a>
+             </div>
+                  <p class="card-text text-secondary"> in alexandaria city</p>
+             
+               </div>
+            </div>
+         </div>
+         <div class="col-12 col-sm-12 col-m-6 col-lg-4 my-3">
+            <div class="card alll " style="width: 20rem;">
+               <img src="img/res6.avif" class="card-img-top " style="height: 300px;" alt="...">
+               <div class="card-body">
+             <div class="cont d-flex justify-content-between">
+               <h5 class="card-title d-inline text-dark text-capitalize">pablo restaurant</h5>
+               <a href="#" class="btn btn-secondary text-warning">know more</a>
+             </div>
+                  <p class="card-text text-secondary">in alexandaria city</p>
+             
+               </div>
+            </div>
+         </div>
+
+         <div class="col-12 col-sm-12 col-m-6 col-lg-4 my-3">
+            <div class="card alll " style="width: 20rem;">
+               <img src="img/res-9.avif" class="card-img-top " style="height: 300px;" alt="...">
+               <div class="card-body">
+             <div class="cont d-flex justify-content-between">
+               <h5 class="card-title d-inline text-dark text-capitalize">Charlie's Restaurant</h5>
+               <a href="#" class="btn btn-secondary text-warning">know more</a>
+             </div>
+                  <p class="card-text text-secondary">in new cairo</p>
+             
+               </div>
+            </div>
+         </div>
+
+         <div class="col-12 col-sm-12 col-m-6 col-lg-4 my-3">
+            <div class="card alll " style="width: 20rem;">
+               <img src="img/res5.avif" class="card-img-top " style="height: 300px;" alt="...">
+               <div class="card-body">
+             <div class="cont d-flex justify-content-between">
+               <h5 class="card-title d-inline text-dark text-capitalize">el mohamedy</h5>
+               <a href="#" class="btn btn-secondary text-warning">know More</a>
+             </div>
+                  <p class="card-text text-secondary" >in cairo city.</p>
+             
+               </div>
+            </div>
+         </div>
+
+         <div class="col-12 col-sm-12 col-m-6 col-lg-4 my-3">
+            <div class="card alll " style="width: 20rem;">
+               <img src="img/res2.avif" class="card-img-top " style="height: 300px;" alt="...">
+               <div class="card-body ">
+             <div class="cont d-flex justify-content-between">
+               <h5 class="card-title d-inline text-dark text-capitalize"> Pavilion Restaurant</h5>
+               <a href="#" class="btn btn-secondary text-warning">know more</a>
+             </div>
+                  <p class="card-text text-secondary">in cairo city</p>
+             
+               </div>
+            </div>
+         </div>
+
+         <div class="col-12 col-sm-12 col-m-6 col-lg-4 my-3">
+            <div class="card alll " style="width: 20rem;">
+               <img src="img/lopylungo.jpg" class="card-img-top " style="height: 300px;" alt="...">
+               <div class="card-body ">
+             <div class="cont d-flex justify-content-between">
+               <h5 class="card-title d-inline text-dark text-capitalize">lobby lounge</h5> 
+               <a href="#" class="btn btn-secondary text-warning">know more</a>
+             </div>
+                  <p class="card-text text-secondary">in alexandaria city.</p>
+             
+               </div>
+            </div>
+         </div>
+
+     <div class="ddd flex-wrap   d-flex justify-content-between">
+      <div class="col-12 col-sm-12 col-m-6 col-lg-7   my-3">
+         <div class="card alll" style="width: 20rem;">
+            <img src="img/fixed5.avif" class="card-img-top " style="height: 300px;" alt="...">
+            <div class="card-body ">
+          <div class="cont d-flex justify-content-between">
+            <h5 class="card-title d-inline text-dark text-capitalize">Stereo Restauran</h5>
+            <a href="#" class="btn btn-secondary text-warning">know more</a>
+          </div>
+               <p class="card-text text-secondary">in cairo city </p>
+        
+            </div>
+         </div>
+      </div>
+
+
+      <div class="col-12 col-sm-12 col-m-6 col-lg-5 my-3">
+         <div class="card alll" style="width: 20rem;">
+            <img src="img/res7.avif" class="card-img-top " style="height: 300px;" alt="...">
+            <div class="card-body ">
+          <div class="cont d-flex justify-content-between">
+            <h5 class="card-title d-inline fs-6 text-dark">Restaurant Paloma,</h5>
+            <a href="#" class="btn btn-secondary text-warning">know more</a>
+          </div>
+               <p class="card-text text-secondary">in new cairo</p>
+          
+            </div>
+         </div>
+      </div>
+     </div>
+
+      </div>
+   </div>
+
+   <div class="container-fluid bbb" style="width: 100%; height: 22rem;">
+
+   </div>
+   <hr>
+   <div class="container-fluid fs-2 text-center bg-secondary text-light text-uppercase py-4">
+         thanks for
+   </div>
+
+   
+
+
+<div class="container mt-5"  >
+  <div class="row d-flex justify-content-between">
+
+
+    <div class="item1  sccx  item3 mt-4 ms-5  col-12 col-sm-12 col-md-6 col-lg-4" style="width: 18rem; height: 300px;">
+      <div class="overlay">
+        <div class="title-item text-ligh ms-3 ">
+          <h6 class="fs-6 text-white mt-3 text-uppercase  ">all thanks and appreciation</h6>
+        </div>
+  
+        <div class="info-item ms-3 text-light">
+            <img src="img/dev2.jpg" class="imggg" width="60px" height="80px">
+            <h5 class="text-info">eng ahmed ali</h5>
+            <p>front end</p>
+        </div>
+       </div>
+    </div>
+    <div class="item1 sccx item4 mt-4 ms-5 col-12 col-sm-12 col-md-6 col-lg-4" style="width: 18rem; height: 300px;">
+
+      <div class="overlay">
+        <div class="title-item text-white ms-3 mt-3 text-uppercase">
+          <h6>all thanks and appreciation</h6>
+        </div>
+  
+        <div class="info-item ms-3 text-light">
+            <img src="img/dev5.jpg" class="imggg" width="60px" height="80px">
+            <h5 class="text-info">eng ahmed ali</h5>
+            <p>front end</p>
+        </div>
+       </div>
+    </div>
+    <div class="item1  sccx  item5 mt-4 ms-5  col-12 col-sm-12 col-m-6 col-lg-4" style="width: 18rem; height: 300px;">
+      <div class="overlay">
+        <div class="title-item text-light ms-3 mt-3 text-uppercase">
+          <h6 >all thanks and appreciation</h6>
+        </div>
+  
+        <div class="info-item text-light ms-3">
+            <img src="img/dev6.jpg" class="imggg" width="60px" height="80px">
+            <h5 class="text-info" >eng ahmed ali</h5>
+            <p>front end</p>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+  
+         <hr class="my-5">
+<div class="container pb-5  " >
+           <h3 class="text-center text-info fs-1 ">news food</h3> 
+
+  <div class="card box  col-12 col-sm-12 col-m- 8col-lg-12 my-5 "   > 
+        <div class="row g-0 d-flex flex-wrap">
+
+
+                <div class=" nnn col-12 col-sm-12 col-md-5 col-lg-4" >  
+                        <img  src="img/juse.jpg"  class=" skww scaler  img-fluid rounded-start" alt=""> 
+               </div>
+    
+
+                <div class="card-body col-12 col-sm-12 col-md-7 col-lg-7 "> 
+                       <h5 class="card-title text-info text-capitalize fs-3">podacast title </h5> 
+                       <div class="aa"> <time datetime="2020-05-25 12:00:00"> 
+                             <i class="fas fa-calendar-alt text-danger mr-2"></i> Mon, May 25th 2020</time>
+                       </div>
+                           <progress max="2" value="1" class="rop "></progress>
+        
+                       <p class="card-text mt-1 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dicta nam, maiores obcaecati ad cupiditate at vero similique voluptate adipisci harum omnis, delectus minus quidem .</p>
+                       <div class="row mt-5"> 
+                        <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-pencil"></i> podacast</div> 
+                       
+                       <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 btn btn-info text-light d-inline py-2"><i class="fa-solid fs-6 fa-caret-right"></i> play Episode</div>
+                       <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-clock"></i> mins</div> 
+                  </div> 
+
+                 </div> 
+        </div>
+   </div>
+
+</div> 
+
+   
+
+<div class="container pb-5 ">
+  
+  
+<div class="card  box col-12 col-sm-12 col-md-8 col-lg-12 my-5 "   > 
+  <div class="row g-0 d-flex flex-wrap-reverse ">
+
+<!-- 
+          <div class=" nnn col-12 col-sm-12 col-md-5 col-lg-4" >  
+                  <img  src="img/juse.jpg"  class=" skww  img-fluid rounded-start" alt=""> 
+         </div> -->
+
+
+          <div class="card-body col-12 col-sm-12 col-md-7 col-lg-7 "> 
+                 <h5 class="card-title text-info text-capitalize fs-3">podacast title </h5> 
+                 <div class="aa"> <time datetime="2020-05-25 12:00:00"> 
+                       <i class="fas fa-calendar-alt text-danger mr-2"></i> Mon, May 25th 2020</time>
+                 </div>
+                     <progress max="2" value="1" class="rop "></progress>
+  
+                 <p class="card-text mt-1 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dicta nam, maiores obcaecati ad cupiditate at vero similique voluptate adipisci harum omnis, delectus minus quidem .</p>
+                 <div class="row mt-5"> 
+                  <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-pencil"></i> podacast</div> 
+                 
+                 <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 btn btn-info text-light d-inline py-2"><i class="fa-solid fs-6 fa-caret-right"></i> play Episode</div>
+                 <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-clock"></i> mins</div> 
+            </div> 
+           </div> 
+
+
+           
+          <div class=" nnn col-12 col-sm-12 col-md-5 col-lg-4" >  
+            <img  src="img/ice_cream.jpg"  class=" oovve scaler img-fluid rounded-start" alt=""> 
+         </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+</div>
+
+
+<div class="container pb-5" >
+
+
+<div class="card box  col-12 col-sm-12 col-md-9 col-lg-12  my-5"   > 
+<div class="row g-0 d-flex flex-wrap">
+
+
+       <div class=" nnn col-12 col-sm-12 col-md-5 col-lg-4" >  
+               <img  src="img/gallary_2.jpg"  class=" skww scaler img-fluid rounded-start" alt=""> 
+      </div>
+
+
+       <div class="card-body col-12 col-sm-12 col-md-7 col-lg-7 "> 
+              <h5 class="card-title text-info text-capitalize fs-3">podacast title </h5> 
+              <div class="aa"> <time datetime="2020-05-25 12:00:00"> 
+                    <i class="fas fa-calendar-alt text-danger mr-2"></i> Mon, May 25th 2020</time>
+              </div>
+                  <progress max="2" value="1" class="rop "></progress>
+
+              <p class="card-text mt-1 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dicta nam, maiores obcaecati ad cupiditate at vero similique voluptate adipisci harum omnis, delectus minus quidem .</p>
+              <div class="row mt-5"> 
+                <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-pencil"></i> podacast</div> 
+               
+               <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 btn btn-info text-light d-inline py-2"><i class="fa-solid fs-6 fa-caret-right"></i> play Episode</div>
+               <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-clock"></i> mins</div> 
+          </div> 
+        </div> 
+</div>
+</div>
+
+</div> 
+
+
+<div class="container pb-5 ">
+  
+  
+  <div class="card  box col-12 col-sm-12 col-md-9 col-lg-12 my-5 "   > 
+    <div class="row g-0 d-flex flex-wrap-reverse ">
+  
+  <!-- 
+            <div class=" nnn col-12 col-sm-12 col-md-5 col-lg-4" >  
+                    <img  src="img/juse.jpg"  class=" skww  img-fluid rounded-start" alt=""> 
+           </div> -->
+  
+  
+            <div class="card-body col-12 col-sm-12 col-md-7 col-lg-7 "> 
+                   <h5 class="card-title text-info text-capitalize fs-3">podacast title </h5> 
+                   <div class="aa"> <time datetime="2020-05-25 12:00:00"> 
+                         <i class="fas fa-calendar-alt text-danger mr-2"></i> Mon, May 25th 2020</time>
+                   </div>
+                       <progress max="2" value="1" class="rop "></progress>
+    
+                   <p class="card-text mt-1 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dicta nam, maiores obcaecati ad cupiditate at vero similique voluptate adipisci harum omnis, delectus minus quidem .</p>
+                   <div class="row mt-5"> 
+                    <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-pencil"></i> podacast</div> 
+                   
+                   <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 btn btn-info text-light d-inline py-2"><i class="fa-solid fs-6 fa-caret-right"></i> play Episode</div>
+                   <div class="div1 ms-3 col-11 col-sm-11 col-md-4 col-lg-3 d-inline btn btn-danger text-light py-2"><i class="fa-solid fa-clock"></i> mins</div> 
+              </div> 
+             </div> 
+  
+  
+             
+            <div class=" nnn col-12 col-sm-12 col-md-5 col-lg-4" >  
+              <img src="img/gallary_1.jpg"  class=" oovve scaler img-fluid rounded-start" alt=""> 
+           </div>
+  
+  
+  
+  
+  
+    </div>
+  </div>
+  
+  </div>
+
+<div class=" ddddrr container mb-5 col-6 col-sm-6 col-md-5 col-lg-12">
+    <div class="  flex-wrap d-flex justify-content-between col-12 col-sm-12 col-md-6 col-lg-12 ">
+      <div class=" text-center my-2 col-4 col-sm-4  col-md-6 col-lg-2 ittmm">
+         <h4 class="my-2 fs-4 text-capitalize text-info">subcripe now</h4>
+     <img class="my-2" src="img/insta.jpg" width="80px" height="50px">
+         <p class="my-2 fs-5 text-info ">go to link</p>
+      </div>
+      <div class="text-center my-2 col-12 col-sm-12 col-md-6 col-lg-2  ittmm">
+        <h4 class="my-2 fs-4 text-capitalize text-info" > follow</h4>
+         <img src="img/call.jpg" width="80px" class="my-2" height="50px">
+        <p class="my-2 fs-5 text-info">go to link</p>
+     </div>
+     <div class="text-center my-2 col-12 col-sm-12 col-md-6 col-lg-2  ittmm">
+      <h4 class="my-2 fs-4 text-capitalize text-info">like the page</h4>
+      <img src="img/link in.jpg" class="my-2" width="70px" height="50px"> 
+      <p class="my-2 fs-5 text-info">go to link</p>
+    </div>
+    <div class="text-center my-2 col-12 col-sm-12 col-md-6 col-lg-2  ittmm">
+    <h4 class="my-2 fs-4 text-capitalize text-info">watch vedios</h4>
+   <img src="img/insta.jpg" class="my-2" width="70px" height="50px">
+    <p class="my-2 fs-5 text-info">go to link</p>
+   </div>
+   </div>
+</div>
+  
+<div class="container-fluid text-center bg-info col-12 col-sm-6 col-md-6 col-lg-12">
+ <div class=" pt-4">
+  <div class="d-flex justify-content-between flex-wrap">
+
+
+    <div class="diiiv1  col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="pr"></div>
+      
+        <div class="imginfo my-2">
+          <div class="bacimg d-inline"> <img src="img/buger.jpg " width="70px" height="70px"></div>
+          <div class="d-inline ms-2 text-light">good company</div>
+        </div>
+        <div class="pr"></div>
+        
+        <ul class="listafoot">
+            <li>tel: 000-000-000</li>
+             <li>address: egypt</li>
+             <li>fax: 000-000-000</li>
+        </ul>
+    </div>
+
+
+    <div class="diiiv1  col-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="pr"></div>
+    
+      <div class="imginfo my-2">
+        <div class="bacimg d-inline "> <img class="" src="img/buger.jpg " width="70px" height="70px"></div>
+        <div class="d-inline ms-2 text-light">good company</div>
+      </div>
+      <div class="pr"></div>
+      
+      <ul class="listafoot ">
+          <li class="text-dark">tel: 000-000-000</li>
+           <li class="text-dark">address: egypt</li>
+           <li class="text-dark">fax: 000-000-000</li>
+      </ul>
+  </div>
+
+
+
+  <div class="diiiv1  col-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="pr"></div>
+  
+    <div class="imginfo my-2">
+      <div class="bacimg d-inline"> <img src="img/buger.jpg " width="70px" height="70px"></div>
+      <div class="d-inline ms-2 text-light">good company</div>
+    </div>
+    <div class="pr"></div>
+    
+    <ul class="listafoot">
+        <li>tel: 000-000-000</li>
+         <li>address: egypt</li>
+         <li>fax: 000-000-000</li>
+    </ul>
+</div>
+
+
+
+
+  </div>
+ 
+  
+  
+
+ </div>
+
+
+</div>
+
+<div class="container-fluid bg-info">
+<div class="line"></div>
+<div class="cont my-3 text-dark fs-4 text-center">copeyright &copy; 2020 restaurant of elmohamedy in mansora</div>
+<div class="line my-2"></div>
+<div class="line m-"></div>
+</div>
+
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/script.js"></script>
+
+ 
+
+</body>
+
+</html>
+
+
+
+
+
